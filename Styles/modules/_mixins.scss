@@ -13,8 +13,15 @@
 
     }
     
+}
 
-    
-
-
+@mixin setIcon ($width: 15px, $height: 15px, $margin: 10px, $url) {
+    display: inline-block;
+    width: $width;
+    height: $height;
+    margin-left: $margin;
+    background-image: url($url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
