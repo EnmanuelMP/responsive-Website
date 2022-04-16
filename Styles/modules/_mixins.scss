@@ -1,3 +1,7 @@
+
+@use './variables' as v;
+
+
 @mixin setDisplay ($display: flex, $direction: column, $column: center, $row: center) {
     
     display: $display;
@@ -24,4 +28,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@mixin setFont($size: 1.4rem, $weight: bold, $lineHeight: 1.8rem, $color: v.$just-white) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    color: $color;
 }
